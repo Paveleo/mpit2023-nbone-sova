@@ -4,6 +4,7 @@ export const SCREEN_HOME = 'Home'
 export const SCREEN_SERVICES = 'Services'
 export const SCREEN_HOMEWORK = 'HomeWork'
 export const SCREEN_PROFILE = 'Profile'
+export const SCREEN_LESSONSTABLE = 'LessonsTable'
 
 export default [
     {
@@ -12,6 +13,10 @@ export default [
     },
     {
         name: SCREEN_SERVICES,
+        component: null
+    },
+    {
+        name: SCREEN_LESSONSTABLE,
         component: null
     },
     {
