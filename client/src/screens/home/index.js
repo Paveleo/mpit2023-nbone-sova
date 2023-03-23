@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 
 import {COLORS} from '../../utils/const';
-import { SCREEN_SERVICES} from '..';
+import { SCREEN_SERVICES, SCREEN_PROFILE} from '..';
 // const [value, onChangeText] = React.useState('Useless Multiline Placeholder');
 const {width, height} = Dimensions.get('screen');
 const Home = ({navigation}) => {
@@ -73,16 +73,18 @@ const Home = ({navigation}) => {
             </View>
           </View>
           <View  style={{paddingTop: 20}}>
-            <View  style={{width: 334, height: 137, borderWidth: 1, borderColor: '#E7E7E7', borderRadius: 16}}>
-              <TouchableOpacity onPress={()=>navigation.navigate('Profile')} style={{paddingHorizontal: 20, paddingTop: 16}}>
-                <Text style={{color: '#000000', fontSize: 16}}>Каникулы начинаются </Text>
-                <Text style={{color: '#000000', fontSize: 10, opacity: 0.4}}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </Text>
-                <View style={{flexDirection: 'row', marginTop: 10, justifyContent: 'space-between'}}>
-                  <Text style={{color: '#000000', fontSize: 10, opacity: 0.4}}>01.09.2023 </Text>
-                  <Text style={{color: '#000000', fontSize: 10, opacity: 0.4}}>20:25 </Text>
-                </View>
-              </TouchableOpacity>
-            </View>
+            <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_PROFILE)} style={{paddingHorizontal: 20, paddingTop: 16}}>
+              <View  style={{width: 334, height: 137, borderWidth: 1, borderColor: '#E7E7E7', borderRadius: 16}}>
+                
+                  <Text style={{color: '#000000', fontSize: 16}}>Каникулы начинаются </Text>
+                  <Text style={{color: '#000000', fontSize: 10, opacity: 0.4}}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </Text>
+                  <View style={{flexDirection: 'row', marginTop: 10, justifyContent: 'space-between'}}>
+                    <Text style={{color: '#000000', fontSize: 10, opacity: 0.4}}>01.09.2023 </Text>
+                    <Text style={{color: '#000000', fontSize: 10, opacity: 0.4}}>20:25 </Text>
+                  </View>
+                
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
       </ImageBackground>

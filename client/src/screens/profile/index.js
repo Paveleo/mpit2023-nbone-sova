@@ -12,7 +12,7 @@ View,
   Image,
   ScrollView
 } from 'react-native';
-import { SCREEN_HOMEWORK, SCREEN_HOME } from '..';
+import { SCREEN_HOME } from '..';
 
 import {COLORS} from '../../utils/const';
 const {width, height} = Dimensions.get('screen');
