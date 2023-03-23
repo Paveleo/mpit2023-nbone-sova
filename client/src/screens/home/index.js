@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 
 import {COLORS} from '../../utils/const';
+import { SCREEN_SERVICES} from '..';
 // const [value, onChangeText] = React.useState('Useless Multiline Placeholder');
 const {width, height} = Dimensions.get('screen');
 const Home = ({navigation}) => {
@@ -39,7 +40,7 @@ const Home = ({navigation}) => {
                 // onChangeText={text => onChangeText(text)}
               />
             </View>
-            <TouchableOpacity style={{marginLeft: 8}}>
+            <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_SERVICES)} style={{marginLeft: 8}}>
               <Image source={require('./../../image/icon_bell.png')}/>
             </TouchableOpacity>
           </View>
