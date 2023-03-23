@@ -68,13 +68,68 @@ const Profile = ({navigation}) => {
             </View>
             <View style={{marginTop: 20}}>
                 <Text style={{color: 'black', fontSize: 20, marginBottom: 25,}}>Рейтинг</Text>
-                <View style={{flexDirection: 'row',}}>
+                <ScrollView style={{height: height/2.5, width: '100%'}}>
+                <View style={{flexDirection: 'row', marginBottom: 15}}>
                     <Image 
                         style={{height: 48, width: 48,}}
                         source={require('../../image/ellipse.png')}
                     />
-                    <Text></Text>
+                    <View style={{justifyContent: 'center', alignItems: 'center', marginLeft: 16}}>
+                        <Text style={{color: 'black', fontSize: 20,}}>Иванов Иван #1</Text>
+                    </View>
                 </View>
+                <Image 
+                    source={require('../../image/line.png')}
+                />
+                <View style={{flexDirection: 'row', marginTop: 15, marginBottom: 15}}>
+                    <Image 
+                        style={{height: 48, width: 48,}}
+                        source={require('../../image/ellipse.png')}
+                    />
+                    <View style={{justifyContent: 'center', alignItems: 'center', marginLeft: 16,}}>
+                        <Text style={{color: 'black', fontSize: 20,}}>Иванов Иван #2</Text>
+                    </View>
+                </View>
+                <Image 
+                    source={require('../../image/line.png')}
+                />
+                <View style={{flexDirection: 'row', marginTop: 15, marginBottom: 15}}>
+                    <Image 
+                        style={{height: 48, width: 48,}}
+                        source={require('../../image/ellipse.png')}
+                    />
+                    <View style={{justifyContent: 'center', alignItems: 'center', marginLeft: 16,}}>
+                        <Text style={{color: 'black', fontSize: 20,}}>Иванов Иван #3</Text>
+                    </View>
+                </View>
+                <Image 
+                    source={require('../../image/line.png')}
+                />
+                <View style={{flexDirection: 'row', marginTop: 15, marginBottom: 15}}>
+                    <Image 
+                        style={{height: 48, width: 48,}}
+                        source={require('../../image/ellipse.png')}
+                    />
+                    <View style={{justifyContent: 'center', alignItems: 'center', marginLeft: 16,}}>
+                        <Text style={{color: 'black', fontSize: 20,}}>Иванов Иван #4</Text>
+                    </View>
+                </View>
+                <Image 
+                    source={require('../../image/line.png')}
+                />
+                <View style={{flexDirection: 'row', marginTop: 15, marginBottom: 15}}>
+                    <Image 
+                        style={{height: 48, width: 48,}}
+                        source={require('../../image/ellipse.png')}
+                    />
+                    <View style={{justifyContent: 'center', alignItems: 'center', marginLeft: 16,}}>
+                        <Text style={{color: 'black', fontSize: 20,}}>Иванов Иван #5</Text>
+                    </View>
+                </View>
+                <Image 
+                    source={require('../../image/line.png')}
+                />
+                </ScrollView>
             </View>
           </View>
         </View>
