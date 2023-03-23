@@ -1,4 +1,4 @@
-import {SCREEN_LOADING, SCREEN_HOME, SCREEN_SERVICES} from '../screens'
+import {SCREEN_LOADING, SCREEN_HOME, SCREEN_SERVICES, SCREEN_HOMEWORK} from '../screens'
 import React from 'react'
 import { Platform } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
@@ -8,6 +8,7 @@ import { COLORS } from '../utils/const'
 import Loading from '../screens/loading'
 import Home from '../screens/home'
 import Services from '../screens/services'
+import HomeWork from '../screens/homework'
 
 
 const Stack = createStackNavigator()
@@ -34,6 +35,13 @@ const Navigation = () => {
                 <Stack.Screen
                     name={SCREEN_SERVICES}
                     component={Services}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen
+                    name={SCREEN_HOMEWORK}
+                    component={HomeWork}
                     options={{
                         headerShown: false
                     }}
