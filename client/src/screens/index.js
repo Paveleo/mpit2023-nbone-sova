@@ -3,6 +3,7 @@ export const SCREEN_LOADING = 'Loading'
 export const SCREEN_HOME = 'Home'
 export const SCREEN_SERVICES = 'Services'
 export const SCREEN_HOMEWORK = 'HomeWork'
+export const SCREEN_PROFILE = 'Profile'
 
 export default [
     {
