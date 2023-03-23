@@ -12,7 +12,7 @@ import {
   Image,
   ScrollView
 } from 'react-native';
-import { SCREEN_HOMEWORK, SCREEN_HOME } from '..';
+import { SCREEN_HOMEWORK, SCREEN_HOME, SCREEN_LESSONSTABLE } from '..';
 
 import {COLORS} from '../../utils/const';
 const {width, height} = Dimensions.get('screen');
@@ -27,7 +27,7 @@ const Services = ({navigation}) => {
         <View style={{ paddingHorizontal: 40}}>
           <View style={{justifyContent: 'center', flexDirection: 'row', justifyContent: 'space-between',alignItems: 'baseline', paddingTop: 40}}>
               <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_HOME)}>
-                <Text style={{color: '#000000', fontSize: 24}}>Главная</Text>
+                <Text style={{color: '#000000', fontSize: 24}}>Сервисы</Text>
               </TouchableOpacity>
             <Text style={{color: '#999999', fontSize: 10}}>Нижне-Бестяхская СОШ им. М. Е. Попова</Text>
           </View>
@@ -51,7 +51,7 @@ const Services = ({navigation}) => {
                 </TouchableOpacity>
             </View >
             <View style={{width: 342, height: 65, borderBottomWidth: 1,flexDirection: 'row', alignItems: 'center'}}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_LESSONSTABLE)}>
                     <Text style={{fontSize: 14, color: '#262931'}}>📃   Расписание</Text>
                 </TouchableOpacity>
             </View>

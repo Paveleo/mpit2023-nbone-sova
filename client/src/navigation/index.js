@@ -1,4 +1,4 @@
-import {SCREEN_LOADING, SCREEN_HOME, SCREEN_SERVICES, SCREEN_HOMEWORK} from '../screens'
+import {SCREEN_LOADING, SCREEN_HOME, SCREEN_SERVICES, SCREEN_HOMEWORK, SCREEN_LESSONSTABLE} from '../screens'
 import React from 'react'
 import { Platform } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
@@ -9,6 +9,7 @@ import Loading from '../screens/loading'
 import Home from '../screens/home'
 import Services from '../screens/services'
 import HomeWork from '../screens/homework'
+import LessonsTable from '../screens/lessonstable'
 
 
 const Stack = createStackNavigator()
@@ -42,6 +43,13 @@ const Navigation = () => {
                 <Stack.Screen
                     name={SCREEN_HOMEWORK}
                     component={HomeWork}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen
+                    name={SCREEN_LESSONSTABLE}
+                    component={LessonsTable}
                     options={{
                         headerShown: false
                     }}
