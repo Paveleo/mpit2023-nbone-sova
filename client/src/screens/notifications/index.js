@@ -12,12 +12,13 @@ import {
   Image,
   ScrollView
 } from 'react-native';
-import { SCREEN_SERVICES} from '..';
+import {SCREEN_NOTIFICATION} from '..';
 
 import {COLORS} from '../../utils/const';
+
 const {width, height} = Dimensions.get('screen');
 
-const Lessonstable = ({navigation}) => {
+const Notification = ({navigation}) => {
   const isDarkMode = useColorScheme() === 'dark';
   const backgroundStyle = {
     backgroundColor: isDarkMode ? '#222' : '#F3F3F3',
@@ -27,7 +28,7 @@ const Lessonstable = ({navigation}) => {
       <ImageBackground source={require('./../../image/splashscreen.png')} style={{width: '100%', height: '100%'}}>
         <View style={{ paddingHorizontal: 40}}>
             <View style={{paddingTop: 20}}>
-                <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_SERVICES)}>
+                <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_NOTIFICATION)}>
                 <Image source={require('./../../image/backspace.png')}/>
                 </TouchableOpacity>
             </View>
@@ -131,9 +132,9 @@ const styles = StyleSheet.create({
     flex: 1,
     width,
     height,
-    // alignItems: 'center',
+    alignItems: 'center',
     backgroundColor: COLORS.background,
   },
 });
 
-export default Lessonstable;
+export default Notification;

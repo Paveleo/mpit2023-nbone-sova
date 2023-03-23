@@ -73,8 +73,8 @@ const Home = ({navigation}) => {
             </View>
           </View>
           <View  style={{paddingTop: 20}}>
-            <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_PROFILE)} style={{paddingHorizontal: 20, paddingTop: 16}}>
-              <View  style={{width: 334, height: 137, borderWidth: 1, borderColor: '#E7E7E7', borderRadius: 16}}>
+            <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_PROFILE)} style={{paddingTop: 16}}>
+              <View  style={{width: 334, height: 137, borderWidth: 1, paddingHorizontal: 20, borderColor: '#E7E7E7', borderRadius: 16}}>
                 
                   <Text style={{color: '#000000', fontSize: 16}}>Каникулы начинаются </Text>
                   <Text style={{color: '#000000', fontSize: 10, opacity: 0.4}}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </Text>

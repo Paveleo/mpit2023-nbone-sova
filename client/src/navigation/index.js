@@ -1,4 +1,4 @@
-import {SCREEN_LOADING, SCREEN_HOME, SCREEN_SERVICES, SCREEN_HOMEWORK, SCREEN_PROFILE, SCREEN_LESSONSTABLE} from '../screens'
+import {SCREEN_LOADING, SCREEN_HOME, SCREEN_SERVICES, SCREEN_HOMEWORK, SCREEN_PROFILE, SCREEN_LESSONSTABLE, SCREEN_NOTIFICATION} from '../screens'
 import React from 'react'
 import { Platform } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
@@ -11,7 +11,7 @@ import Services from '../screens/services'
 import HomeWork from '../screens/homework'
 import Profile from '../screens/profile'
 import Lessonstable from '../screens/lessonstable'
-// import LessonsTable from '../screens/lessonstable'
+import Notification from '../screens/notifications'
 
 
 const Stack = createStackNavigator()
@@ -58,6 +58,13 @@ const Navigation = () => {
                  <Stack.Screen
                     name={SCREEN_LESSONSTABLE}
                     component={Lessonstable}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen
+                    name={SCREEN_NOTIFICATION}
+                    component={Notification}
                     options={{
                         headerShown: false
                     }}
