@@ -23,4 +23,8 @@ export default [
         name: SCREEN_HOMEWORK,
         component: null
     },
+    {
+        name: SCREEN_PROFILE,
+        component: null
+    },
 ]
