@@ -10,7 +10,8 @@ import Home from '../screens/home'
 import Services from '../screens/services'
 import HomeWork from '../screens/homework'
 import Profile from '../screens/profile'
-import LessonsTable from '../screens/lessonstable'
+import Lessonstable from '../screens/lessonstable'
+// import LessonsTable from '../screens/lessonstable'
 
 
 const Stack = createStackNavigator()
@@ -56,7 +57,7 @@ const Navigation = () => {
                 />
                  <Stack.Screen
                     name={SCREEN_LESSONSTABLE}
-                    component={LessonsTable}
+                    component={Lessonstable}
                     options={{
                         headerShown: false
                     }}

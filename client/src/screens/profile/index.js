@@ -73,6 +73,7 @@ const Profile = ({navigation}) => {
                         style={{height: 48, width: 48,}}
                         source={require('../../image/ellipse.png')}
                     />
+                    <Text></Text>
                 </View>
             </View>
           </View>

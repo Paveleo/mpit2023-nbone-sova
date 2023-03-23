@@ -15,8 +15,10 @@ import {
 import { SCREEN_SERVICES} from '..';
 
 import {COLORS} from '../../utils/const';
+
 const {width, height} = Dimensions.get('screen');
-const Lessonstable = ({navigation}) => {
+
+export default Lessonstable = ({navigation}) => {
   const isDarkMode = useColorScheme() === 'dark';
   const backgroundStyle = {
     backgroundColor: isDarkMode ? '#222' : '#F3F3F3',
@@ -135,4 +137,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Lessonstable;
+// export default Lessonstable;
