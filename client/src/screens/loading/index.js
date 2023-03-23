@@ -7,6 +7,8 @@ import {
   SafeAreaView,
   useColorScheme,
   TouchableOpacity,
+  ImageBackground,
+  Image
 } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
@@ -22,24 +24,15 @@ const Loading = ({navigation}) => {
     backgroundColor: isDarkMode ? '#222' : '#F3F3F3',
   };
   return (
+    
     <SafeAreaView style={[styles.container, backgroundStyle]}>
-      <View style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
-        <Text style={{color: isDarkMode ? 'white' : 'black'}}>
-          Loading screen
-        </Text>
-        <View style={{flexDirection: 'row'}}>
-          <Text style={{color: isDarkMode ? 'white' : 'black'}}>
-            I'am ready
-          </Text>
-          <AntDesign
-            color={isDarkMode ? 'white' : 'black'}
-            size={20}
-            name="check"></AntDesign>
+      <ImageBackground source={require('./../../image/splashscreen.png')} style={{width: '100%', height: '100%'}}>
+        <View style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
+          <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_HOME)}>
+              <Image source={require('./../../image/iconSova.png')}/>
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_HOME)}>
-            <Text style={{color: isDarkMode ? 'white' : 'black'}}>TO GO SCREEN_HOME</Text>
-        </TouchableOpacity>
-      </View>
+      </ImageBackground>
     </SafeAreaView>
   );
 };
